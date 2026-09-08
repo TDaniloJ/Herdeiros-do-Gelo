@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# Adicione a URL pública do GitHub Pages quando o repositório for criado.

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apêndices — Herdeiros do Gelo</title>
+<meta name="description" content="Consulte a linha do tempo, o mapa e o glossário de Herdeiros do Gelo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site">
+  <div class="bar">
+    <div class="brand"><span class="glyph">❄</span> Herdeiros do Gelo</div>
+    <nav class="main" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="mundo.html">Mundo</a>
+      <a href="personagens.html">Personagens</a>
+      <a href="capitulos.html">Capítulos</a>
+      <a href="apendices.html" class="active" aria-current="page">Apêndices</a>
+    </nav>
+    <div class="search-wrap"><form class="site-search" data-site-search role="search"><label class="sr-only" for="site-search-apendices">Buscar no site</label><input id="site-search-apendices" type="search" placeholder="Buscar" autocomplete="off"><button type="submit">Buscar</button></form><div class="search-results" data-search-results hidden></div></div>
+  </div>
+</header>
+
+<main class="wrap" id="conteudo">
+  <section class="hero hero-tight">
+    <span class="eyebrow">Apêndices</span>
+    <h1 class="hero-tight h1">Linha do tempo, mapa, glossário e ganchos</h1>
+    <p class="lede">Material de apoio para consulta rápida enquanto a história é escrita.</p>
+  </section>
+
+  <nav class="section-nav" aria-label="Seções dos apêndices">
+    <a href="#linha-do-tempo">Linha do tempo</a>
+    <a href="#mapa">Mapa</a>
+    <a href="#glossario">Glossário</a>
+    <a href="#ganchos">Ganchos da trama</a>
+  </nav>
+
+  <div class="crack"></div>
+
+  <section id="linha-do-tempo">
+    <h2>Linha do tempo</h2>
+    <div class="timeline">
+      <div class="item">
+        <h4>Era antiga — A luta dos deuses</h4>
+        <p>Dois deuses entram em confronto direto; a batalha é catastrófica o bastante para deixar apenas cinco divindades vivas no mundo. Três continuam conhecidas por nome: a Deusa da Luxúria, a Deusa do Gelo e Mãe, como os antigos passaram a chamá-la.</p>
+      </div>
+      <div class="item">
+        <h4>Era antiga — Gaia e as Patronas dormem</h4>
+        <p>Gaia cria as oito Patronas e, pouco depois, todas — incluindo ela — são colocadas para dormir acorrentadas em pontos isolados do planeta. A razão exata se perde entre duas versões concorrentes (veja a seção "Por que dormem acorrentadas" na página do Mundo).</p>
+      </div>
+      <div class="item">
+        <h4>Fundação de Nevanthia</h4>
+        <p>O local da batalha original se torna, com o tempo, a região conhecida como Nevanthia — atraindo poder e disputa justamente por ficar perto o bastante do vale onde a Dragoa dorme.</p>
+      </div>
+      <div class="item">
+        <h4>18 anos atrás — Ano 805</h4>
+        <p>A Família Glace vive o auge de suas conquistas como especialista em gelo. Na mesma época, Ren nasce e é abandonado ainda bebê por Theron em frente a uma loja no Distrito das Cinzas.</p>
+      </div>
+      <div class="item">
+        <h4>Meses depois — a morte do avô Corvin</h4>
+        <p>Ren é acolhido por Corvin, avô materno, também esquecido pela própria filha por causa do QI de gelo. Corvin morre pouco depois, deixando a lição que molda como Ren encara o próprio destino.</p>
+      </div>
+      <div class="item">
+        <h4>Hoje — ano 823</h4>
+        <p>Ren tem 18 anos recém-completados. A Grande Reunião está a dois dias de distância quando o Distrito das Cinzas entra em guerra aberta e a explosão de Ren acorda a Dragoa em seu vale subterrâneo.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="crack"></div>
+
+  <section id="mapa">
+    <h2>Mapa</h2>
+    <p class="muted">Diagrama esquemático, fora de escala — pensado como referência de posição relativa, não como mapa geográfico final.</p>
+    <figure class="map-figure">
+      <div class="img-frame map-frame">
+      <svg viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="map-title map-desc">
+        <title id="map-title">Mapa esquemático de Nevanthia</title>
+        <desc id="map-desc">O Distrito Central fica no centro. O Distrito Glace fica ao noroeste. O Distrito das Cinzas fica ao sudoeste e abriga o Vale subterrâneo da Dragoa. Outras casas ficam ao nordeste e sudeste. As outras sete Patronas estão fora da província.</desc>
+        <rect x="0" y="0" width="640" height="400" fill="var(--bg-panel)"></rect>
+        <!-- Nevanthia outline -->
+        <rect x="60" y="50" width="380" height="300" rx="2" fill="none" stroke="var(--border)" stroke-width="1.5"></rect>
+        <text x="70" y="40" fill="var(--text-muted)" font-size="13" font-family="Karla, sans-serif">Província de Nevanthia</text>
+
+        <!-- Distrito Central -->
+        <rect x="200" y="170" width="100" height="70" fill="var(--bg-panel-alt)" stroke="var(--ice)" stroke-width="1.5"></rect>
+        <text x="250" y="210" fill="var(--text)" font-size="12" text-anchor="middle" font-family="Karla, sans-serif">Distrito Central</text>
+
+        <!-- Distrito Glace -->
+        <rect x="80" y="90" width="100" height="60" fill="var(--bg-panel-alt)" stroke="var(--ice-soft)" stroke-width="1.5"></rect>
+        <text x="130" y="124" fill="var(--text)" font-size="11" text-anchor="middle" font-family="Karla, sans-serif">Distrito Glace</text>
+
+        <!-- Other noble districts -->
+        <rect x="330" y="90" width="90" height="60" fill="var(--bg-panel-alt)" stroke="var(--ice-soft)" stroke-width="1.5"></rect>
+        <text x="375" y="124" fill="var(--text)" font-size="11" text-anchor="middle" font-family="Karla, sans-serif">Outras casas</text>
+
+        <rect x="330" y="270" width="90" height="60" fill="var(--bg-panel-alt)" stroke="var(--ice-soft)" stroke-width="1.5"></rect>
+        <text x="375" y="304" fill="var(--text)" font-size="11" text-anchor="middle" font-family="Karla, sans-serif">Outras casas</text>
+
+        <!-- Distrito das Cinzas -->
+        <rect x="80" y="270" width="100" height="60" fill="var(--bg-panel-alt)" stroke="var(--ember)" stroke-width="1.5" stroke-dasharray="4 3"></rect>
+        <text x="130" y="304" fill="var(--text)" font-size="11" text-anchor="middle" font-family="Karla, sans-serif">Distrito das Cinzas</text>
+
+        <!-- Dragoa vale, underground marker -->
+        <circle cx="130" cy="300" r="5" fill="var(--ember)"></circle>
+        <text x="130" y="345" fill="var(--text-muted)" font-size="10" text-anchor="middle" font-family="Karla, sans-serif">Vale da Dragoa (subterrâneo)</text>
+
+        <!-- Distant valleys note -->
+        <text x="460" y="70" fill="var(--text-muted)" font-size="12" font-family="Karla, sans-serif">Fora do mapa:</text>
+        <text x="460" y="90" fill="var(--text-muted)" font-size="11" font-family="Karla, sans-serif">as outras 7 Patronas</text>
+        <text x="460" y="106" fill="var(--text-muted)" font-size="11" font-family="Karla, sans-serif">dormem espalhadas</text>
+        <text x="460" y="122" fill="var(--text-muted)" font-size="11" font-family="Karla, sans-serif">pelo resto do mundo</text>
+        <circle cx="480" cy="160" r="3" fill="var(--ice-soft)"></circle>
+        <circle cx="510" cy="180" r="3" fill="var(--ice-soft)"></circle>
+        <circle cx="470" cy="200" r="3" fill="var(--ice-soft)"></circle>
+        <circle cx="500" cy="220" r="3" fill="var(--ice-soft)"></circle>
+      </svg>
+      </div>
+      <figcaption>Mapa esquemático, fora de escala. A marca vermelha indica o Vale subterrâneo da Dragoa.</figcaption>
+    </figure>
+    <details class="map-text">
+      <summary>Consultar o mapa em texto</summary>
+      <ul>
+        <li>Centro: Distrito Central e sede da Casa Voss.</li>
+        <li>Noroeste: Distrito Glace.</li>
+        <li>Sudoeste: Distrito das Cinzas e Vale subterrâneo da Dragoa.</li>
+        <li>Nordeste e sudeste: territórios de outras casas.</li>
+        <li>Fora da província: os vales das outras sete Patronas.</li>
+      </ul>
+    </details>
+    <p class="muted">Quando houver arte final, esta div pode ser trocada por uma imagem em <code>images/mundo/mapa.jpg</code>, mantendo a legenda.</p>
+  </section>
+
+  <div class="crack"></div>
+
+  <section id="glossario">
+    <h2>Glossário</h2>
+    <div class="plaque glossary">
+      <dl>
+        <dt>Escama</dt><dd>Moeda oficial de Nevanthia, com valor sustentado por cristais de qi embutidos.</dd>
+        <dt>Estágio</dt><dd>Nível de avanço no cultivo de um QI — quanto mais alto, maior o controle sobre o próprio elemento.</dd>
+        <dt>Guarda de Nevanthia</dt><dd>Força de ordem dividida em seis Divisões, cada uma sob um Capitão, que responde à Casa Voss.</dd>
+        <dt>Maré</dt><dd>Cada um dos quatro ciclos que substituem as estações em Nevanthia: Branca, Verde, de Cinzas e Dourada.</dd>
+        <dt>Patrona</dt><dd>Uma das oito criaturas primordiais criadas por Gaia, cada uma dormindo acorrentada em um vale isolado.</dd>
+        <dt>QI</dt><dd>Energia interna que todo cultivador acumula e refina; costuma vir ligada a um elemento ou afinidade.</dd>
+        <dt>QI de gelo</dt><dd>Afinidade da Família Glace; em suas portadoras mulheres, avançar de estágio consome memórias recentes.</dd>
+        <dt>Selo</dt><dd>Marca que prende uma fera abissal dentro de um hospedeiro humano — no caso de Ren, o selo de Kyrion.</dd>
+        <dt>Vale</dt><dd>Território isolado onde uma Patrona dorme acorrentada.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <div class="crack"></div>
+
+  <section id="ganchos">
+    <h2>Ganchos da trama</h2>
+    <p class="muted">Ideias e fios soltos para os próximos capítulos — nada aqui é canônico ainda, é só material de apoio para não esquecer.</p>
+    <div class="grid-cards">
+      <div class="plaque beast">
+        <h3>A Dragoa acorda de vez</h3>
+        <p>Como o distrito, a Guarda e a própria Casa Glace reagem se ela realmente subir à superfície — e o que ela pode reconhecer em Ren, dado o hábito dela com crianças desamparadas.</p>
+      </div>
+      <div class="plaque beast">
+        <h3>Kyrion se mostra pela primeira vez</h3>
+        <p>Uma cena onde o ódio de Ren alimenta a fera de forma física e visível, não só narrada — o primeiro sinal para o leitor (e talvez para outro personagem) de que ele carrega algo assim.</p>
+      </div>
+      <div class="plaque">
+        <h3>O primeiro estalo de memória</h3>
+        <p>Um gatilho forte o bastante para Isolde, ou uma das irmãs, recuperar um fragmento sobre Ren — o início da queda da mentira construída por Theron.</p>
+      </div>
+      <div class="plaque">
+        <h3>As correntes têm razão de ser?</h3>
+        <p>Uma pista, plantada aos poucos, sobre qual das duas versões da história das correntes é a verdadeira — ou se nenhuma das duas conta a história toda.</p>
+      </div>
+      <div class="plaque">
+        <h3>Ren e Fenn se cruzam na Grande Reunião</h3>
+        <p>O primeiro encontro entre os dois hospedeiros de fera abissal — reconhecimento mútuo, sem que ninguém mais na sala entenda o que está acontecendo.</p>
+      </div>
+      <div class="plaque">
+        <h3>O Capitão Ashgrave presta atenção</h3>
+        <p>O momento em que a 6ª Divisão finalmente nota que o Distrito das Cinzas tem algo além do de sempre — e decide (ou não) fazer alguma coisa a respeito.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<button class="to-top" type="button" aria-label="Voltar ao topo">↑</button>
+
+<footer class="site">
+  <div class="wrap footer-grid"><div>Herdeiros do Gelo — obra original de Danilo. Rascunho em desenvolvimento.</div><nav class="footer-links" aria-label="Links do rodapé"><a href="index.html">Início</a><a href="personagens.html">Personagens</a><a href="capitulos.html">Capítulos</a><span>Contato e redes sociais em breve</span></nav></div>
+</footer>
+<script src="search.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

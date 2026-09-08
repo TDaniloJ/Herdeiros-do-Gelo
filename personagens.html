@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personagens — Herdeiros do Gelo</title>
+<meta name="description" content="Conheça Ren Glace, a Família Glace, a Casa Voss e os demais personagens.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site">
+  <div class="bar">
+    <div class="brand"><span class="glyph">❄</span> Herdeiros do Gelo</div>
+    <nav class="main" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="mundo.html">Mundo</a>
+      <a href="personagens.html" class="active" aria-current="page">Personagens</a>
+      <a href="capitulos.html">Capítulos</a>
+      <a href="apendices.html">Apêndices</a>
+    </nav>
+    <div class="search-wrap"><form class="site-search" data-site-search role="search"><label class="sr-only" for="site-search-personagens">Buscar no site</label><input id="site-search-personagens" type="search" placeholder="Buscar" autocomplete="off"><button type="submit">Buscar</button></form><div class="search-results" data-search-results hidden></div></div>
+  </div>
+</header>
+
+<main class="wrap" id="conteudo">
+  <section class="hero hero-tight">
+    <span class="eyebrow">Personagens</span>
+    <h1 class="hero-tight h1">A Família Glace e quem está à sua volta</h1>
+    <p class="lede">Conheça os personagens centrais, suas alianças e os conflitos que movem Nevanthia.</p>
+  </section>
+
+  <div class="crack"></div>
+
+  <section>
+    <h2>Protagonista</h2>
+    <div class="filter-bar" role="search" aria-label="Filtrar personagens">
+      <input type="search" data-filter-search placeholder="Buscar por nome, família ou papel" aria-label="Buscar personagens">
+      <select data-filter-type aria-label="Filtrar por grupo">
+        <option value="todos">Todos os grupos</option>
+        <option value="glace">Família Glace</option>
+        <option value="cinzas">Distrito das Cinzas</option>
+        <option value="voss">Casa Voss</option>
+        <option value="fera">Feras e hospedeiros</option>
+      </select>
+      <span class="filter-status" data-filter-status aria-live="polite"></span>
+    </div>
+    <p class="filter-empty">Nenhum personagem encontrado. Tente outro termo ou grupo.</p>
+    <div class="plaque" data-character-card data-character-type="glace">
+      <!-- Quando tiver a arte, troque a div abaixo por:
+           <img src="images/personagens/ren.jpg" alt="Ren Glace"> -->
+      <div class="img-frame portrait portrait-large">
+        <span class="img-frame-label">Ren Glace</span>
+      </div>
+      <h3>Ren Glace</h3>
+      <span class="role">18 anos, recém-completados</span>
+      <p>Magro, olhos castanhos comuns, roupas simples — nada nele chama atenção à primeira vista, o que é exatamente como sobreviveu até aqui. Tem uma condição rara que mantém seu reservatório de qi enorme, mas que o faz parecer sempre fraco por não se preencher naturalmente. Abandonado pelo pai quando bebê, cresceu sabendo de tudo que a própria família esqueceu dele — e é o único hospedeiro entre dez jovens da sua geração que consegue manter a fera abissal selada em si sob controle, na maior parte do tempo.</p>
+      <dl>
+        <dt>Selo</dt><dd>Kyrion, fera abissal de nove caudas e seis olhos — desperta ao alimentar-se do próprio ódio de Ren</dd>
+        <dt>Maldição</dt><dd>Gelo gravado na mão esquerda por Theron, que piora se ele se aproximar da própria família</dd>
+        <dt>Avô materno</dt><dd>Corvin, um caçador aposentado que o acolheu por alguns meses após o abandono — também esquecido pela própria filha por causa do QI de gelo. Morreu pouco depois, deixando como última lição que Ren deveria morrer ao lado de quem amasse, não sozinho como ele</dd>
+      </dl>
+    </div>
+  </section>
+
+  <div class="crack"></div>
+
+  <section>
+    <h2>Família Glace</h2>
+    <div class="grid-cards">
+      <div class="plaque" data-character-card data-character-type="glace">
+        <div class="img-frame portrait portrait-medium">
+          <span class="img-frame-label">Isolde Glace</span>
+        </div>
+        <h3>Isolde Glace</h3>
+        <span class="role">Mãe de Ren · "Bruxa do Gelo"</span>
+        <p>Cabelo branco longo quase sempre amarrado, olhos verdes intensos, mãos permanentemente frias e de tom azulado. Veste um quimono branco e roxo estampado de flores, ombros à mostra, com um cachecol felpudo branco e uma tiara em forma de raízes reforçadas. Considerada uma "beleza eterna" por nunca envelhecer. Por causa do QI de gelo, acredita ter congelado um dos filhos — ou que nunca teve um terceiro filho.</p>
+      </div>
+      <div class="plaque" data-character-card data-character-type="glace">
+        <div class="img-frame portrait portrait-medium">
+          <span class="img-frame-label">Theron Glace</span>
+        </div>
+        <h3>Theron Glace</h3>
+        <span class="role">Pai de Ren</span>
+        <p>Abandonou Ren ainda bebê em frente a uma loja, aproveitando-se da condição da esposa e das filhas para apagar qualquer rastro do filho da história da família — e gravou a maldição na mão de Ren para garantir que o trato nunca fosse quebrado. Não age só por frieza: teme genuinamente o que a fera selada em Ren pode se tornar perto da família, e usa esse medo como justificativa para uma decisão que, na prática, também blindou sua própria posição como chefe da segunda casa mais poderosa de Nevanthia.</p>
+      </div>
+      <div class="plaque" data-character-card data-character-type="glace">
+        <h3>Alva &amp; Nix Glace</h3>
+        <span class="role">Irmãs gêmeas, cultivo genial</span>
+        <p>Aparências quase idênticas — Alva tem pupilas prateado-brancas e cabelo preso; Nix tem pupilas prateado-negras e cabelo solto. Entre os jovens mais promissores da geração em talento de cultivo.</p>
+      </div>
+      <div class="plaque" data-character-card data-character-type="glace">
+        <h3>Branca &amp; Cristal Glace</h3>
+        <span class="role">Irmãs mais velhas</span>
+        <p>Mais próximas de Ren do que qualquer outra pessoa na família — a relação entre elas três é bem melhor do que a que Ren tem com os próprios pais, mesmo com o esquecimento constante.</p>
+      </div>
+      <div class="plaque" data-character-card data-character-type="cinzas">
+        <h3>Elara, Selene e Ondina Glace</h3>
+        <span class="role">Tias</span>
+        <p>As três também carregam o QI de gelo e a perda de memória que vem com ele; formam, junto de Isolde, o núcleo feminino que sustenta o nome da família na província.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="crack"></div>
+
+  <section>
+    <h2>Distrito das Cinzas</h2>
+    <div class="grid-cards">
+      <div class="plaque" data-character-card data-character-type="glace">
+        <h3>Sable</h3>
+        <span class="role">Informante e sobrevivente veterano do distrito</span>
+        <p>Ninguém sabe o nome verdadeiro por trás do apelido. Não pertence a nenhuma facção, vende informação para todas elas e é quem, na prática, ensinou Ren a ler o ritmo da violência do distrito antes de qualquer outra coisa. Não faz isso por afeto declarado — mas também nunca cobrou de Ren o que cobra de qualquer outro cliente.</p>
+      </div>
+      <div class="plaque beast" data-character-card data-character-type="cinzas">
+        <h3>Capitão Roan Ashgrave</h3>
+        <span class="role">6ª Divisão da Guarda de Nevanthia</span>
+        <p>Tecnicamente responsável pelo Distrito das Cinzas. Na prática, manda uma ronda simbólica e não espera encontrar nada ali além do de sempre — o que faz dele, sem querer, a única figura de autoridade que poderia notar Kyrion antes de qualquer um da própria família de Ren. <a href="mundo.html#guarda">Ver a Guarda de Nevanthia →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="crack"></div>
+
+  <section>
+    <h2>Outro hospedeiro</h2>
+    <div class="plaque beast" data-character-card data-character-type="fera">
+      <div class="img-frame portrait portrait-medium">
+        <span class="img-frame-label">Fenn Kestrel</span>
+      </div>
+      <h3>Fenn Kestrel</h3>
+      <span class="role">18 anos · um dos outros nove hospedeiros de fera abissal</span>
+      <p>Ao contrário de Ren, Fenn cresceu sabendo exatamente o que carrega dentro de si — e sabendo se vender por causa disso. Filho de uma família menor que usa o próprio selo como prova de valor diante das grandes casas, ele vê a Grande Reunião como a chance perfeita de aparecer. Não é inimigo declarado de Ren, mas os dois estão entre os poucos que reconhecem, ao se cruzar, o que o outro é.</p>
+    </div>
+  </section>
+
+  <div class="crack"></div>
+
+  <section>
+    <h2>Casa Voss</h2>
+    <div class="grid-cards">
+      <div class="plaque" data-character-card data-character-type="voss">
+        <div class="img-frame portrait portrait-medium">
+          <span class="img-frame-label">Aurelia Voss</span>
+        </div>
+        <h3>Aurelia Voss</h3>
+        <span class="role">Matriarca de Nevanthia · "Mãe do Caos"</span>
+        <p>Cabelo loiro com mechas branco-neve, olhos azuis, vestido longo dourado e branco. Aparência jovem o bastante para enganar qualquer um — está no topo entre as mulheres mais fortes do mundo conhecido.</p>
+      </div>
+      <div class="plaque" data-character-card data-character-type="voss">
+        <div class="img-frame portrait portrait-medium">
+          <span class="img-frame-label">Kira Voss</span>
+        </div>
+        <h3>Kira Voss</h3>
+        <span class="role">19 anos, filha da Matriarca</span>
+        <p>Beleza sobrenatural, cabelo branco longo, olhos verdes, pele clara e aparentemente frágil como porcelana — até ela empunhar a espada. Estilo bruto e feroz, com força e velocidade muito acima do que o corpo sugere. Disputada tanto pelo torneio de sucessão quanto pelo torneio à parte por sua própria mão.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="crack"></div>
+
+  <section>
+    <h2>A fera</h2>
+    <div class="plaque beast" data-character-card data-character-type="fera">
+      <h3>Kyrion</h3>
+      <span class="role">Fera abissal · nove caudas, seis olhos</span>
+      <p>Uma entre dez feras abissais antigas seladas em jovens da mesma geração de Ren, cada selo com regras próprias. Kyrion tem tamanho descomunal quando manifestada por completo, e só recupera força emprestando poder a Ren através do ódio acumulado dele — o que faz de cada trauma da vida de Ren, literalmente, combustível.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap footer-grid"><div>Herdeiros do Gelo — obra original de Danilo. Rascunho em desenvolvimento.</div><nav class="footer-links" aria-label="Links do rodapé"><a href="index.html">Início</a><a href="capitulos.html">Capítulos</a><a href="apendices.html">Apêndices</a><span>Contato e redes sociais em breve</span></nav></div>
+</footer>
+<script src="search.js"></script><script src="filters.js"></script>
+<script src="filters.js"></script>
+</body>
+</html>
