@@ -1,12 +1,18 @@
 (function () {
   'use strict';
   var index = [
+    { title: 'Nevanthia Studios', url: '../index.html', text: 'estúdio universos histórias jogos projetos' },
+    { title: 'Projetos', url: '../projetos.html', text: 'Herdeiros do Gelo novos universos jogos' },
+    { title: 'Sobre o estúdio', url: '../sobre.html', text: 'marca independente criação autoral' },
+    { title: 'Notícias', url: '../noticias.html', text: 'atualizações novidades publicações' },
+    { title: 'Contato', url: '../contato.html', text: 'parcerias contato comunidade' },
     { title: 'Início', url: 'index.html', text: 'Herdeiros do Gelo fantasia drama mistério Ren Glace' },
     { title: 'O Mundo', url: 'mundo.html', text: 'Gaia Patronas Nevanthia distritos Guarda QI maldições Grande Reunião' },
     { title: 'Personagens', url: 'personagens.html', text: 'Ren Isolde Theron Glace Kyrion Fenn Casa Voss personagens' },
     { title: 'Capítulos', url: 'capitulos.html', text: 'volumes capítulos publicados leitura' },
     { title: 'Capítulo 1 — A história dos deuses', url: 'capitulo-1.html', text: 'deuses Ren Nevanthia Grande Reunião' },
     { title: 'Capítulo 2 — A explosão', url: 'capitulo-2.html', text: 'explosão Distrito das Cinzas Dragoa Patronas' },
+    { title: 'Capítulo 3 — A voz sob a terra', url: 'capitulo-3.html', text: 'voz terra herdeiro gelo Kyrion criatura praça' },
     { title: 'Apêndices', url: 'apendices.html', text: 'linha do tempo mapa glossário ganchos' }
   ];
   var form = document.querySelector('[data-site-search]');
