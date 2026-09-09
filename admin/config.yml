@@ -1,0 +1,44 @@
+backend:
+  name: github
+  repo: TDaniloJ/Herdeiros-do-Gelo
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+local_backend: false
+publish_mode: editorial_workflow
+media_folder: "images/uploads"
+public_folder: "/Herdeiros-do-Gelo/images/uploads"
+
+collections:
+  - name: site
+    label: Configurações do site
+    files:
+      - label: Identidade
+        name: identidade
+        file: "content/site/identidade.yml"
+        fields:
+          - { label: Nome do estúdio, name: studio_name, widget: string }
+          - { label: Descrição curta, name: description, widget: text }
+          - { label: E-mail público, name: contact_email, widget: string, required: false }
+  - name: noticias
+    label: Notícias
+    folder: "content/noticias"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Data, name: date, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: Status, name: status, widget: select, options: ["Publicado", "Em desenvolvimento", "Anúncio"] }
+      - { label: Resumo, name: summary, widget: text }
+      - { label: Conteúdo, name: body, widget: markdown }
+  - name: capitulos
+    label: Capítulos
+    folder: "content/capitulos"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Número, name: number, widget: number, value_type: int }
+      - { label: Título, name: title, widget: string }
+      - { label: Resumo, name: summary, widget: text }
+      - { label: Conteúdo, name: body, widget: markdown }
