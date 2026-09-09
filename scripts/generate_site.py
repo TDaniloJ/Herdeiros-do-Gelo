@@ -305,8 +305,14 @@ def generate(root=ROOT):
         html.escape(text(identity.get("studio_name"), "Estúdio")),
         html.escape(text(identity.get("description"), "Universos para explorar.")),
     )
+    home_content = '<h1 id="hero-title">{}</h1><p class="lede">{}</p>'.format(
+        html.escape(text(identity.get("home_title"), "Herdeiros do Gelo")),
+        html.escape(text(identity.get("home_lede"), "Uma fantasia de gelo, memória e poder.")),
+    )
     index_page = root / "index.html"
     if not replace_region(index_page, "IDENTITY", identity_content):
+        missing.append(str(index_page))
+    if not replace_region(index_page, "HOME", home_content):
         missing.append(str(index_page))
     if not replace_region(news_page, "NEWS", render_news(news, identity)):
         missing.append(str(news_page))

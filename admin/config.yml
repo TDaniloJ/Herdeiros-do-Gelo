@@ -2,6 +2,10 @@ backend:
   name: git-gateway
   branch: main
 
+site_url: https://tdaniloj.github.io/Herdeiros-do-Gelo/
+display_url: https://tdaniloj.github.io/Herdeiros-do-Gelo/
+logo_url: https://tdaniloj.github.io/Herdeiros-do-Gelo/favicon.svg
+show_preview_links: false
 local_backend: false
 publish_mode: editorial_workflow
 media_folder: "images/uploads"
@@ -18,6 +22,41 @@ collections:
           - { label: Nome do estúdio, name: studio_name, widget: string }
           - { label: Descrição curta, name: description, widget: text }
           - { label: E-mail público, name: contact_email, widget: string, required: false }
+          - { label: Título da página inicial, name: home_title, widget: string }
+          - { label: Texto de destaque, name: home_lede, widget: text }
+          - { label: Nome do projeto em destaque, name: featured_project, widget: string }
+  - name: mundo
+    label: Mundo da obra
+    files:
+      - label: Configuração do mundo
+        name: mundo
+        file: "content/site/mundo.yml"
+        fields:
+          - { label: Título, name: title, widget: string }
+          - { label: Descrição, name: description, widget: text }
+          - { label: Texto de introdução, name: intro, widget: text }
+  - name: seo
+    label: SEO e compartilhamento
+    files:
+      - label: Metadados
+        name: seo
+        file: "content/site/seo.yml"
+        fields:
+          - { label: Título do site, name: title, widget: string }
+          - { label: Descrição, name: description, widget: text }
+          - { label: URL pública, name: site_url, widget: string }
+          - { label: Imagem de compartilhamento, name: social_image, widget: image, required: false }
+  - name: legal
+    label: Informações legais
+    files:
+      - label: Direitos e contato
+        name: legal
+        file: "content/site/legal.yml"
+        fields:
+          - { label: Titular dos direitos, name: rights_holder, widget: string }
+          - { label: Ano do copyright, name: copyright_year, widget: number, value_type: int }
+          - { label: E-mail para solicitações, name: contact_email, widget: string, required: false }
+          - { label: Observação legal, name: notice, widget: text }
   - name: noticias
     label: Notícias
     folder: "content/noticias"
