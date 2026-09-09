@@ -29,6 +29,18 @@ collections:
       - { label: Status, name: status, widget: select, options: ["Publicado", "Em desenvolvimento", "Anúncio"] }
       - { label: Resumo, name: summary, widget: text }
       - { label: Conteúdo, name: body, widget: markdown }
+  - name: personagens
+    label: Personagens
+    folder: "content/personagens"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Nome, name: name, widget: string }
+      - { label: Papel, name: role, widget: string, required: false }
+      - { label: Grupo, name: group, widget: string, required: false, hint: "Ex.: glace, voss, cinzas ou fera" }
+      - { label: Imagem, name: image, widget: image, required: false }
+      - { label: Descrição, name: description, widget: text }
+      - { label: Conteúdo adicional, name: body, widget: markdown, required: false }
   - name: capitulos
     label: Capítulos
     folder: "content/capitulos"
