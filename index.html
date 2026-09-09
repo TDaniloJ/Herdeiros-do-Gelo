@@ -7,6 +7,7 @@
   <meta name="description" content="Nevanthia Studios cria histórias, jogos e universos originais. Conheça Herdeiros do Gelo.">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -47,5 +48,14 @@
 </main>
 <footer class="site"><div class="wrap footer-grid"><div>© 2026 Nevanthia Studios · Todos os direitos reservados.</div><nav class="footer-links" aria-label="Links do rodapé"><a href="projetos.html">Projetos</a><a href="sobre.html">Sobre</a><a href="noticias.html">Notícias</a><a href="contato.html">Contato</a><a href="direitos.html">Direitos e uso</a><a href="privacidade.html">Privacidade</a></nav></div></footer>
 <script src="site.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('init', function (user) {
+      if (user && window.location.hash.indexOf('confirmation_token=') !== -1) {
+        window.location.replace(new URL('admin/', window.location.href).href);
+      }
+    });
+  }
+</script>
 </body>
 </html>
