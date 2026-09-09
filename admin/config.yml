@@ -1,9 +1,6 @@
 backend:
-  name: github
-  repo: TDaniloJ/Herdeiros-do-Gelo
+  name: git-gateway
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
 
 local_backend: false
 publish_mode: editorial_workflow
